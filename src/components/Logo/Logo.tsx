@@ -4,7 +4,7 @@ import type { TLogoProps } from './types'
 import { Image } from 'minista'
 
 export default (props: TLogoProps) => {
-  const { className, loading = 'lazy' } = props
+  const { className } = props
 
   const title = 'Home'
 
