@@ -9,7 +9,7 @@ export default defineConfig({
   root: '',
 
   // Базовый путь (если деплой не в корень сайта, поменяй)
-  base: '/',
+  base: '/yandex-crowd-test/',
 
   // Папка с публичными файлами (копируются как есть)
   public: 'public',
