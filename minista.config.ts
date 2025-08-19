@@ -27,13 +27,15 @@ export default defineConfig({
       outDir: 'assets/images',
       outName: '[name]',
       remoteName: 'remote',
-      // optimize: {
-      //   layout: 'fixed',
-      //   breakpoints: [
-      //     360, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,
-      //   ],
-      //   resolution: [1, 2],
-      // },
+      optimize: {
+        layout: 'fixed',
+        format: 'inherit',
+        formatOptions: {},
+        breakpoints: [
+          360, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,
+        ],
+        resolution: [1, 2],
+      },
     },
 
     // Поддержка импорта SVG как React/JSX-компонентов
