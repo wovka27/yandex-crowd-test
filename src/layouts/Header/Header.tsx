@@ -1,11 +1,9 @@
 import './Header.scss'
-import type { THeaderProps } from './types'
+
 import Marquee from '@/components/Marquee/Marquee'
 import Button from '@/components/Button'
 
-export default (props: THeaderProps) => {
-  const { url } = props
-
+export default () => {
   const titleWords: Array<{ id: string; value: string }> = [
     { id: 'a', value: 'Превратите уездный город' },
     { id: 'b', value: 'в столицу' },
@@ -78,7 +76,9 @@ export default (props: THeaderProps) => {
         <div className="header__content">
           <h1 className="header__title">
             {titleWords.map(({ id, value }, index) => (
-              <p id={id} key={index}>{value}</p>
+              <p id={id} key={index}>
+                {value}
+              </p>
             ))}
           </h1>
           <p className="header__subtitle">
