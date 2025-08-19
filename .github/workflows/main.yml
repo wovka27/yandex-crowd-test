@@ -1,4 +1,4 @@
-name: test-landing
+name: yandex-crowd-test
 
 on:
   push:
@@ -26,6 +26,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Lint Fix
+        run: npm run lint:fix
 
       - name: Build project
         run: npm run build
