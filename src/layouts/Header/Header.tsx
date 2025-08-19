@@ -3,6 +3,7 @@ import './Header.scss'
 import Marquee from '@/components/Marquee/Marquee'
 import Button from '@/components/Button'
 import { Image } from 'minista'
+import Icon from '@/components/Icon'
 
 export default () => {
   const titleWords: Array<{ id: string; value: string }> = [
@@ -65,13 +66,7 @@ export default () => {
 
       <div className="header__inner container">
         <a className="header__logo-link" href="/">
-          <Image
-            width="246"
-            height="36"
-            className="header__logo-img"
-            src="/src/assets/images/logo.svg"
-            alt="логотип"
-          />
+          <Icon hasFill name="logo" className="header__logo-img" />
         </a>
 
         <div className="header__content">
