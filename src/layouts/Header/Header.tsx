@@ -65,11 +65,11 @@ export default () => {
 
       <div className="header__inner container">
         <a className="header__logo-link" href="/">
-          <Image
+          <img
             width="246"
             height="36"
             className="header__logo-img"
-            src="/src/assets/images/logo.svg"
+            src="/images/logo.svg"
             alt="логотип"
           />
         </a>
