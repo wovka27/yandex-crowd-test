@@ -1,4 +1,5 @@
 import './Session.scss'
+import { Image } from 'minista'
 
 const EventInfo = () => {
   const infoRows = {
@@ -33,10 +34,10 @@ export default () => {
   return (
     <section id="session" className="session container">
       <div className="session__img-wrapper">
-        <img
+        <Image
           width="530"
           height="609"
-          src="src/assets/images/session-img.png"
+          src="/src/assets/images/session-img.png"
           alt="session-img"
         />
       </div>
