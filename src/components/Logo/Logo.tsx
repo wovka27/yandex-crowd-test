@@ -1,6 +1,7 @@
 import './Logo.scss'
 import clsx from 'clsx'
 import type { TLogoProps } from './types'
+import { Image } from 'minista'
 
 export default (props: TLogoProps) => {
   const { className, loading = 'lazy' } = props
@@ -14,13 +15,9 @@ export default (props: TLogoProps) => {
       title={title}
       aria-label={title}
     >
-      <img
+      <Image
         className="logo__image"
         src="/images/logo.svg"
-        alt=""
-        width={200}
-        height={68}
-        loading={loading}
       />
     </a>
   )

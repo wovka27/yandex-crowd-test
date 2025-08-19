@@ -1,6 +1,7 @@
 import './TournamentParticipantsItem.scss'
 import Button from '@/components/Button'
 import { TournamentParticipantItemProps } from '@/components/TournamentParticipants/TournamentParticipantItem/types'
+import { Image } from 'minista'
 
 export default (props: TournamentParticipantItemProps) => {
   const { data } = props
@@ -8,7 +9,7 @@ export default (props: TournamentParticipantItemProps) => {
   return (
     <article className="tournament-participant-item">
       <header>
-        <img
+        <Image
           width="320"
           height="320"
           src={data.image || 'src/assets/images/person.png'}

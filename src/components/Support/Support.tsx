@@ -1,4 +1,5 @@
 import './Support.scss'
+import { Image } from 'minista'
 
 export default () => {
   return (
@@ -8,7 +9,7 @@ export default () => {
           <p>Чтобы поддержать Международный васюкинский турнир</p>
           <p>посетите лекцию на тему: <span className="strong">«Плодотворная дебютная идея»</span></p>
         </div>
-        <img width="394" height="250" src="src/assets/images/many_chees_players.png" alt="картинка поддержки" />
+        <Image src="/src/assets/images/many_chees_players.png" alt="картинка поддержки" />
       </h3>
     </section>
   )

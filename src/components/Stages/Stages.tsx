@@ -1,5 +1,6 @@
 import './Stages.scss'
 import Button from '@/components/Button'
+import { Image } from 'minista'
 
 export default () => {
   return (
@@ -52,11 +53,9 @@ export default () => {
           </li>
         </ol>
       </div>
-      <img
-        width="401"
-        height="241"
+      <Image
         className="stages__plane"
-        src="src/assets/images/plane.png"
+        src="/src/assets/images/plane.png"
         alt="картинка самолета"
       />
       <div className="stages__carousel-actions carousel-actions visible-mobile">
