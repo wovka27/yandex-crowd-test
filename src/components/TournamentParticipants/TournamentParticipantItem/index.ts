@@ -1,0 +1,4 @@
+import TournamentParticipantItem
+  from '@/components/TournamentParticipants/TournamentParticipantItem/TournamentParticipantItem'
+
+export default TournamentParticipantItem

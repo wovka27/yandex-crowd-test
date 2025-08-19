@@ -1,0 +1,3 @@
+import TournamentParticipants from '@/components/TournamentParticipants/TournamentParticipants'
+
+export default TournamentParticipants
